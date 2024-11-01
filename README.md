@@ -15,7 +15,7 @@ The Recipes App is a small web application built using Django that allows users 
 
 **SQLite Database**: The application uses a SQLite database to store user information and recipe records, ensuring efficient data management. The database includes tables for user data and recipes, linked via foreign keys.
 
-**Multi-page Application**: The app consists of at least five pages, including the home page, login page, registration page, recipe creation page, and an about page.
+**Multi-page Application**: The app consists of at least five pages, including the home page, login page, logout page, registration page, recipe creation page, and an about page.
 
 ## Getting Started
 
