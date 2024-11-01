@@ -1,0 +1,72 @@
+{% extends "recipes/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container my-5 py-5 px-4 rounded shadow-lg" style="background-color: #f0f4f8;">
+  <!-- Header Section -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold" style="color: #1a73e8;">Share Your Recipe</h1>
+    <p class="lead text-secondary">Unleash your creativity and inspire others with your culinary skills!</p>
+  </div>
+
+  <!-- Form Section -->
+  <form method="POST" class="animate__animated animate__fadeInUp">
+    {% csrf_token %}
+    <fieldset class="form-group p-4 rounded" style="background-color: #ffffff; border: 1px solid #d1d9e6; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+      <legend class="border-bottom pb-2 mb-4 text-dark" style="font-size: 1.3rem; color: #2d3748;">Recipe Information</legend>
+      {{ form|crispy }}
+    </fieldset>
+    
+    <!-- Buttons Section -->
+    <div class="form-group text-center py-4">
+      <button type="submit" class="btn btn-primary btn-lg px-5 py-2 me-3" style="background-color: #3b82f6; border: none; transition: 0.3s;">
+        Save Recipe
+      </button>
+      <a href="{% url 'recipes-home' %}" class="btn btn-outline-secondary btn-lg px-5 py-2" style="transition: 0.3s;">
+        Cancel
+      </a>
+    </div>
+  </form>
+</div>
+
+<style>
+  /* Button Styling and Hover Effects */
+  .btn-primary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: #f1f5f9;
+    color: #2d3748;
+    border-color: #cbd5e0;
+    transform: translateY(-2px);
+  }
+
+  /* Container Animation */
+  .container {
+    animation: fadeInEffect 1s ease-out both;
+  }
+
+  /* Keyframes for Smooth Fade-In Animation */
+  @keyframes fadeInEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive Design and Improved Typography */
+  @media (max-width: 768px) {
+    .display-4 { font-size: 1.8rem; }
+    .lead { font-size: 1rem; }
+    .btn-lg { font-size: 1rem; padding: 0.7rem 1.4rem; }
+    .container { padding: 1.5rem; }
+  }
+</style>
+{% endblock content %}

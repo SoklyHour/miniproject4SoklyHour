@@ -1,0 +1,124 @@
+{% extends "recipes/base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="text-center my-5">
+    <h1 class="display-4">About Django Recipes</h1>
+    <p class="lead text-muted">Your go-to platform for discovering, sharing, and creating delicious recipes!</p>
+  </div>
+
+  <!-- Introduction Section -->
+  <section class="mb-5">
+    <h2 class="text-primary">Our Mission</h2>
+    <p class="lead">
+      Django Recipes is designed to bring people together through a shared love of cooking. Whether you're a seasoned chef or a home cook,
+      our platform provides a space to explore a variety of recipes, share your culinary creations, and inspire others with your favorite dishes.
+    </p>
+    <hr>
+  </section>
+
+  <!-- Features Section -->
+  <section class="mb-5">
+    <h2 class="text-primary">Features</h2>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🌟 Browse Recipes</h5>
+            <p class="card-text">Discover a wide array of recipes, from appetizers to desserts, shared by fellow food lovers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">✍️ Create Your Own</h5>
+            <p class="card-text">Easily add your unique recipes to our platform and showcase your culinary skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">💖 Save Favorites</h5>
+            <p class="card-text">Save your favorite recipes and access them anytime for quick inspiration.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">🤝 Engage with Community</h5>
+            <p class="card-text">Connect with other users, leave comments, and share tips on different recipes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Testimonials Section -->
+<section class="mb-5 black">
+  <h2 class="text-primary">What Our Users Say</h2>
+  <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" >
+      <div class="carousel-item active ">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0 text-light">"Django Recipes has transformed the way I cook and share my meals!- Joe James"</p>
+  
+        </blockquote>
+      </div>
+      <div class="carousel-item">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0 text-light">"I love how easy it is to find and save my favorite recipes! - Sara John"</p>
+          
+        </blockquote>
+      </div>
+      <div class="carousel-item">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0 text-light">"The community is so supportive and inspiring!- John Wick"</p>
+          <!-- Removed footer -->
+        </blockquote>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+  <!-- Call to Action Section -->
+  <section class="text-center mt-5">
+    <h3 class="text-primary">Ready to start cooking?</h3>
+    <p class="lead">Join our community and start exploring new recipes today!</p>
+    <a href="{% url 'user-register' %}" class="btn btn-primary btn-lg">Sign Up Now</a>
+  </section>
+</div>
+
+<!-- Custom CSS for blockquote -->
+<style>
+  .blockquote {
+    font-size: 1.25rem; /* Adjust font size */
+    padding: 1.5rem; /* Add padding */
+    background-color: #5687c2; /* Light background */
+    border-left: 5px solid #007bff; /* Blue left border */
+    border-radius: 0.25rem; /* Rounded corners */
+
+    margin: 1.5rem 0; /* Margin for spacing */
+  }
+  
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blockquote {
+      font-size: 1rem; /* Smaller font size for mobile */
+      padding: 1rem; /* Less padding for mobile */
+    }
+  }
+</style>
+{% endblock content %}
