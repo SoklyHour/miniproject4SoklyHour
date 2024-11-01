@@ -11,7 +11,7 @@ The Recipes App is a small web application built using Django that allows users 
 
 **Recipe Management**: Users can add, view, edit, and delete their favorite recipes, allowing for easy management of their culinary creations.
 
-**Responsive Design**: The application is built with Bootstrap, making it user-friendly on any device. It features a visually appealing interface and includes a **Bootstrap modal** for enhanced user engagement.
+**Responsive Design**: The application is designed with Bootstrap, ensuring a seamless and user-friendly experience across all devices. Its visually appealing interface enhances usability, while a **Bootstrap modal featured in the About page(feature section)** encourages user engagement by providing additional information in an interactive format.
 
 **SQLite Database**: The application uses a SQLite database to store user information and recipe records, ensuring efficient data management. The database includes tables for user data and recipes, linked via foreign keys.
 
