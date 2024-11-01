@@ -79,4 +79,5 @@ SoklyHour
 Inspiration, code snippets, etc.
 * [django](https://docs.djangoproject.com/en/5.1/intro/)
 * [bootstrap](https://getbootstrap.com/)
-* [ChatGPT]()
+* [w3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+* [ChatGPT](https://chatgpt.com/share/67256041-c970-8005-8e82-1dabdec008b8)
