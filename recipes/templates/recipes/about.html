@@ -22,74 +22,147 @@
     <h2 class="text-primary">Features</h2>
     <div class="row">
       <div class="col-lg-6 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#browseRecipesModal">
           <div class="card-body">
             <h5 class="card-title">🌟 Browse Recipes</h5>
-            <p class="card-text">Discover a wide array of recipes, from appetizers to desserts, shared by fellow food lovers.</p>
+            <p class="card-text">Discover a wide array of recipes from appetizers to desserts.</p>
+            <p class="card-text"><small class="text-muted">Click to learn more!</small></p>
           </div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#createOwnModal">
           <div class="card-body">
             <h5 class="card-title">✍️ Create Your Own</h5>
             <p class="card-text">Easily add your unique recipes to our platform and showcase your culinary skills.</p>
+            <p class="card-text"><small class="text-muted">Click to learn more!</small></p>
           </div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#saveFavoritesModal">
           <div class="card-body">
             <h5 class="card-title">💖 Save Favorites</h5>
             <p class="card-text">Save your favorite recipes and access them anytime for quick inspiration.</p>
+            <p class="card-text"><small class="text-muted">Click to learn more!</small></p>
           </div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#engageCommunityModal">
           <div class="card-body">
             <h5 class="card-title">🤝 Engage with Community</h5>
-            <p class="card-text">Connect with other users, leave comments, and share tips on different recipes.</p>
+            <p class="card-text">Connect with other users and share tips on different recipes.</p>
+            <p class="card-text"><small class="text-muted">Click to learn more!</small></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<!-- Testimonials Section -->
-<section class="mb-5 black">
-  <h2 class="text-primary">What Our Users Say</h2>
-  <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner" >
-      <div class="carousel-item active ">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0 text-light">"Django Recipes has transformed the way I cook and share my meals!- Joe James"</p>
-  
-        </blockquote>
-      </div>
-      <div class="carousel-item">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0 text-light">"I love how easy it is to find and save my favorite recipes! - Sara John"</p>
-          
-        </blockquote>
-      </div>
-      <div class="carousel-item">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0 text-light">"The community is so supportive and inspiring!- John Wick"</p>
-          <!-- Removed footer -->
-        </blockquote>
+  <!-- Modal for Browsing Recipes -->
+  <div class="modal fade" id="browseRecipesModal" tabindex="-1" aria-labelledby="browseRecipesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="browseRecipesModalLabel">Browse Recipes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Discover an extensive collection of recipes shared by fellow food enthusiasts. From quick snacks to elaborate meals, you'll find inspiration for any occasion.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-</section>
+
+  <!-- Modal for Creating Your Own Recipes -->
+  <div class="modal fade" id="createOwnModal" tabindex="-1" aria-labelledby="createOwnModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createOwnModalLabel">Create Your Own Recipe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Adding your recipes is easy! Just fill out the required fields, upload a photo, and share your culinary creations with the world.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Saving Favorites -->
+  <div class="modal fade" id="saveFavoritesModal" tabindex="-1" aria-labelledby="saveFavoritesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="saveFavoritesModalLabel">Save Your Favorites</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Keep track of all your favorite recipes! Save them for quick access and enjoy cooking your go-to meals whenever you want.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Engaging with Community -->
+  <div class="modal fade" id="engageCommunityModal" tabindex="-1" aria-labelledby="engageCommunityModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="engageCommunityModalLabel">Engage with Community</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Join our vibrant community! Ask Exchange tips with fellow cooking enthusiasts to enhance your culinary experience.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="mb-5 black">
+    <h2 class="text-primary text-light">What Our Users Say</h2>
+    <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0 text-light">"Django Recipes has transformed the way I cook and share my meals! - Joe James"</p>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0 text-light">"I love how easy it is to find and save my favorite recipes! - Sara John"</p>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0 text-light">"The community is so supportive and inspiring! - John Wick"</p>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
   <!-- Call to Action Section -->
   <section class="text-center mt-5">
@@ -107,18 +180,14 @@
     background-color: #5687c2; /* Light background */
     border-left: 5px solid #007bff; /* Blue left border */
     border-radius: 0.25rem; /* Rounded corners */
-
     margin: 1.5rem 0; /* Margin for spacing */
   }
   
-
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .blockquote {
-      font-size: 1rem; /* Smaller font size for mobile */
-      padding: 1rem; /* Less padding for mobile */
-    }
+  /* Dark background for testimonials */
+  .black {
+    background-color: #333; /* Dark background */
+    padding: 2rem 0; /* Padding for section */
   }
 </style>
-{% endblock content %}
+
+{% endblock %}

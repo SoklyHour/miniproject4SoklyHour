@@ -1,12 +1,12 @@
 {% extends "recipes/base.html" %}
 <!-- -->
 {% block content %}
-<div class="container">
-  <h2>You have been logged out!</h2>
-  <div class="border-top pt-3">
-    <a class="text-muted" href="{% url 'user-login' %}">Log back in here.</a>
+<div class="container mt-5 text-center">
+  <h2 class="mb-4">You have been logged out!</h2>
+  <p class="lead text-muted">We hope to see you again soon.</p>
+  <div class="border-top pt-4">
+    <a class="btn btn-outline-primary btn-lg" href="{% url 'user-login' %}">Log back in here</a>
   </div>
 </div>
-
 <!-- -->
 {% endblock content %}
